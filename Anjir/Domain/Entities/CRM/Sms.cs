@@ -1,7 +1,7 @@
 ﻿using Domain.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace Domain.Entitys.CRM;
+namespace Domain.Entities.CRM;
 
 public class Sms : BaseModel
 {

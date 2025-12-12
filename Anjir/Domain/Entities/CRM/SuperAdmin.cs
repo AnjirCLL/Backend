@@ -1,6 +1,6 @@
 ﻿using Domain.Enums;
 
-namespace Domain.Entitys.CRM;
+namespace Domain.Entities.CRM;
 
 public class SuperAdmin : BaseModel
 {

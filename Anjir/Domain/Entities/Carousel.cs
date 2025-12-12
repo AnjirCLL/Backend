@@ -1,7 +1,7 @@
 ﻿using Domain.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace Domain.Entitys;
+namespace Domain.Entities;
 
 public class Carousel : BaseModel
 {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Toolbelt.ComponentModel.DataAnnotations.Schema.V5;
 
-namespace Domain.Entitys.CRM;
+namespace Domain.Entities.CRM;
 
 public class ControlUser : BaseModel
 {
