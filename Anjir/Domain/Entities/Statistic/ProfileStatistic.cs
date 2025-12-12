@@ -11,18 +11,18 @@ public class ProfileStatistic : BaseModel
     public Guid Id { get; set; }
 
     [Required]
-    public int UserId { get; set; }
+    public Guid UserId { get; set; }
 
     [Required]
-    public int ShopId { get; set; }
+    public Guid ShopId { get; set; }
 
     [Required]
     [MaxLength(50)]
     public string IPAddress { get; set; } = null!;
 
     [ForeignKey(nameof(UserId))]
-    public virtual User? User { get; set; }
+    public User User { get; set; } = null!;
 
     [ForeignKey(nameof(ShopId))]
-    public virtual Shop? Shop { get; set; }
+    public Shop Shop { get; set; } = null!;
 }

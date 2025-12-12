@@ -11,17 +11,17 @@ public class Commentary : BaseModel
     public Guid Id { get; set; }
 
     [Required]
-    public int UserId { get; set; }
+    public Guid UserId { get; set; }
 
     [Required]
-    public int ProductId { get; set; }
+    public Guid ProductId { get; set; }
 
     [Required]
-    public string? Word { get; set; }
+    public string Word { get; set; } = null!;
 
     [ForeignKey(nameof(UserId))]
-    public virtual User? User { get; set; }
+    public User User { get; set; } = null!;
 
     [ForeignKey(nameof(ProductId))]
-    public virtual Product? Product { get; set; }
+    public Product Product { get; set; } = null!;
 }

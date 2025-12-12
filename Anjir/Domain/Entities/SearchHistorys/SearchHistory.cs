@@ -11,20 +11,20 @@ public class SearchHistory : BaseModel
     public Guid Id { get; set; }
 
     [Required]
-    public int UserId { get; set; }
+    public Guid UserId { get; set; }
 
-    public int? ProductId { get; set; }
+    public Guid? ProductId { get; set; }
 
     [Required]
     [MaxLength(255)]
-    public string? SearchTxt { get; set; }
+    public string SearchTxt { get; set; } = null!;
 
     [MaxLength(50)]
     public string SearchType { get; set; } = null!;
 
     [ForeignKey(nameof(UserId))]
-    public virtual User? User { get; set; }
+    public User User { get; set; } = null!;
 
     [ForeignKey(nameof(ProductId))]
-    public virtual Product? Product { get; set; }
+    public Product? Product { get; set; }
 }

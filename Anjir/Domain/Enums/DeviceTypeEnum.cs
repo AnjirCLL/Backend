@@ -3,6 +3,6 @@
 public enum DeviceTypeEnum
 {
     Unknown = 0,
-    Web = 1,
-    Mobile = 2
+    Mobile = 1,
+    Web = 2 
 }
